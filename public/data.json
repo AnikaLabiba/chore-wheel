@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "title": "Bits n Bytes",
+        "description": "A computer manufacturer website. Implemeted in ReactJS and NodeJs.",
+        "category": "Manufacturer website",
+        "startDate": "20th April 2022",
+        "endDates": "30th June 2022",
+        "note": "my first MERN application"
+    },
+    {
+        "_id": 2,
+        "title": "Practicing React",
+        "description": "React core concept practice and make a landing page using ReactJS.",
+        "category": "Manufacturer website",
+        "startDate": "20th April 2022",
+        "endDates": "30th June 2022",
+        "note": "my first MERN application"
+    },
+    {
+        "_id": 3,
+        "title": "Practicing NextJS",
+        "description": "Learn NextJs fundamental and read the documentation.",
+        "category": "Manufacturer website",
+        "startDate": "20th April 2022",
+        "endDates": "30th June 2022",
+        "note": "my first MERN application"
+    },
+    {
+        "_id": 4,
+        "title": "Research for Developer Porfolio",
+        "description": "Search for junior web developer portfolio and .",
+        "category": "Manufacturer website",
+        "startDate": "20th April 2022",
+        "endDates": "30th June 2022",
+        "note": "my first MERN application"
+    }
+]

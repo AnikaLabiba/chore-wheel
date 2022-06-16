@@ -21,13 +21,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    // useEffect(() => {
+
     if (gUser || user) {
         navigate('/tasks')
         //  navigate(from, { replace: true });
     }
-
-
 
     if (loading || gLoading) {
         return <Loading></Loading>
@@ -97,7 +95,7 @@ const Login = () => {
                         {errorElememt}
                         <input className='btn w-full max-w-xs bg-fuchsia-300 hover:bg-fuchsia-300 border-0' type="submit" value='Login' />
                     </form>
-                    <p><small>New to Chores Wheel? <Link className='text-blue-400' to="/register">Create New Account</Link></small></p>
+                    <p><small>New to Chores Wheel?<Link className='text-blue-400' to="/register">Create New Account</Link></small></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}

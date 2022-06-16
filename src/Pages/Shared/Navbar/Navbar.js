@@ -3,6 +3,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import './Navbar.css'
 
 const Navbar = () => {
     const [user] = useAuthState(auth)
@@ -30,7 +31,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' class="btn btn-ghost normal-case text-xl">Chore Wheel</Link>
+                <Link to='/' class="btn btn-ghost normal-case text-xl">Project Synergy</Link>
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
