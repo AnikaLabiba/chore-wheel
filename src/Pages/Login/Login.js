@@ -92,13 +92,13 @@ const Login = () => {
                             </label>
                         </div>
                         {errorElememt}
-                        <input className='btn w-full max-w-xs bg-fuchsia-300 hover:bg-fuchsia-300 border-0' type="submit" value='Login' />
+                        <input className='btn w-full max-w-xs bg-rose-300 hover:bg-rose-300 border-0' type="submit" value='Login' />
                     </form>
                     <p><small>New to Chores Wheel?<Link className='text-blue-400' to="/register">Create New Account</Link></small></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="bg-transparent hover:bg-fuchsia-300 text-fuchsia-700 font-semibold hover:text-white py-2 px-4 border border-fuchsia-300 hover:border-transparent rounded"
+                        className="bg-transparent hover:bg-rose-300 text-rose-700 font-semibold hover:text-white py-2 px-4 border border-rose-300 hover:border-transparent rounded"
                     >Continue with Google</button>
                 </div>
             </div>

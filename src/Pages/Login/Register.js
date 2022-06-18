@@ -88,92 +88,7 @@ const Register = () => {
                                 {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
                             </label>
                         </div>
-                        {/* Phone */}
-                        <div className="form-control w-full max-w-xs">
-                            <input
-                                type="number"
-                                placeholder="Your Phone"
-                                className="input input-sm input-bordered w-full max-w-xs"
-                                {...register("phone", {
-                                    required: {
-                                        value: true,
-                                        message: 'Phone is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.phone?.type === 'required' && <span className="label-text-alt text-red-500">{errors.phone.message}</span>}
-                            </label>
-                        </div>
-                        {/* Address */}
-                        <div className="form-control w-full max-w-xs">
-                            <input
-                                type="text"
-                                placeholder="Your Address"
-                                className="input input-sm input-bordered w-full max-w-xs"
-                                {...register("address", {
-                                    required: {
-                                        value: true,
-                                        message: 'Address is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.address?.type === 'required' && <span className="label-text-alt text-red-500">{errors.address.message}</span>}
-                            </label>
-                        </div>
-                        {/* Country */}
-                        <div className="form-control w-full max-w-xs">
-                            <input
-                                type="text"
-                                placeholder="Your Country"
-                                className="input input-sm input-bordered w-full max-w-xs"
-                                {...register("country", {
-                                    required: {
-                                        value: true,
-                                        message: 'Country is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.country?.type === 'required' && <span className="label-text-alt text-red-500">{errors.country.message}</span>}
-                            </label>
-                        </div>
-                        {/* Company */}
-                        <div className="form-control w-full max-w-xs">
-                            <input
-                                type="text"
-                                placeholder="Your Company"
-                                className="input input-sm input-bordered w-full max-w-xs"
-                                {...register("company", {
-                                    required: {
-                                        value: true,
-                                        message: 'Company is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.company?.type === 'required' && <span className="label-text-alt text-red-500">{errors.company.message}</span>}
 
-                            </label>
-                        </div>
-                        {/* Occupation */}
-                        <div className="form-control w-full max-w-xs">
-                            <input
-                                type="text"
-                                placeholder="Your Occupation"
-                                className="input input-sm input-bordered w-full max-w-xs"
-                                {...register("occupation", {
-                                    required: {
-                                        value: true,
-                                        message: 'Occupation is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.occupation?.type === 'required' && <span className="label-text-alt text-red-500">{errors.occupation.message}</span>}
-                            </label>
-                        </div>
                         {/* Password */}
                         <div className="form-control w-full max-w-xs">
                             <input
@@ -198,13 +113,13 @@ const Register = () => {
                         </div>
 
                         {errorElememt}
-                        <input input-sm className='btn w-full max-w-xs bg-fuchsia-300 hover:bg-fuchsia-300 border-0' type="submit" value="Sign Up" />
+                        <input input-sm className='btn w-full max-w-xs bg-rose-300 hover:bg-rose-300 border-0' type="submit" value="Sign Up" />
                     </form>
                     <p><small>Already have an account? <Link className='text-blue-400' to="/login">Please login</Link></small></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="bg-transparent btn-sm hover:bg-fuchsia-300 text-fuchsia-700 font-semibold hover:text-white py-2 px-4 border border-fuchsia-300 hover:border-transparent rounded"
+                        className="bg-transparent btn-sm hover:bg-rose-300 text-rose-700 font-semibold hover:text-white py-2 px-4 border border-rose-300 hover:border-transparent rounded"
                     >Continue with Google</button>
                 </div>
             </div>
