@@ -20,7 +20,7 @@ const ProjectsDetails = () => {
                     <div>
                         <h1 class="text-5xl font-bold">{project.title}</h1>
                         <p className='my-4'>{project.description}</p>
-                        <p className='my-4'>{project.endDates}- {project.endDates}</p>
+                        <p className='my-4'>{project.startDate}- {project.endDates}</p>
                         <div className='flex justify-center lg:justify-start'>
                             <a href={project.liveSite} class="badge">Live Site</a>
                             <div class="badge badge-primary">Client-side</div>

@@ -27,7 +27,7 @@ const Register = () => {
         console.log(user);
     }
     if (googleUser || user) {
-        navigate('/tasks')
+        navigate('/projects')
     }
 
     let errorElememt

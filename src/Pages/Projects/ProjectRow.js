@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const ProjectRow = ({ project }) => {
     const navigate = useNavigate()
-    const { _id, title, img, category, endDates } = project
+    const { _id, title, img, category, endDates, startDate } = project
     return (
         <tr>
             <td className='flex'>
@@ -26,7 +26,7 @@ const ProjectRow = ({ project }) => {
                 <br />
             </td>
             <td>
-                {endDates}- {endDates}
+                {startDate}- {endDates}
             </td>
             <th>
                 <button onClick={() => navigate(`/editProject/${_id}`)} className='btn btn-ghost text-xl btnColor'><RiEdit2Fill /></button>

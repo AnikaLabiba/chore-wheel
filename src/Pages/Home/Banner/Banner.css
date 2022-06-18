@@ -1,5 +1,29 @@
-.home{
-    background-image: url('../../../Images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+/* making Mobile and tab responsive */
+@media only screen and (max-width:576px) {
+    .gif{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .intro{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+   .banner{
+       padding-bottom: 100%;
+       margin-top: 15%;
+   }
+   
+    .gif{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .intro{
+        width: 90%;
+        margin: 0 auto;
+    }
 }

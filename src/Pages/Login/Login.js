@@ -23,8 +23,7 @@ const Login = () => {
 
 
     if (gUser || user) {
-        navigate('/tasks')
-        //  navigate(from, { replace: true });
+        navigate('/projects');
     }
 
     if (loading || gLoading) {

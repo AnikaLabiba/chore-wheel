@@ -3,7 +3,6 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import './Navbar.css'
 
 const Navbar = () => {
     const [user] = useAuthState(auth)
@@ -14,14 +13,17 @@ const Navbar = () => {
     };
     const menuItems = <>
         {user ? <>
-            <li><button className='btn btn-ghost'>{user?.displayName}</button></li>
+            <li><Link to='/projects'>Projects</Link></li>
+            <li><Link to='/addProject'>Add Project</Link></li>
+            <li><Link to='/profile' className='btn btn-ghost'>{user?.displayName}</Link></li>
             <li><button onClick={logout} className='btn btn-ghost'>Logout</button></li>
         </>
 
-            : <li><Link to='/login'>Login</Link></li>}
+            : <li><Link to='/login'>Login</Link></li>
+        }
     </>
     return (
-        <div class="navbar bg-base-100 lg:px-28">
+        <div class="navbar bg-rose-200 lg:px-28">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
