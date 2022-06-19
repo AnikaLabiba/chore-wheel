@@ -33,7 +33,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Project Synergy</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl">Chore Wheel</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

@@ -18,7 +18,7 @@ const AddProject = () => {
         const note = event.target.note.value
         const project = { email, name, img, title, startDate, endDates, liveSite, description, note }
         console.log(project);
-        fetch('http://localhost:5000/project', {
+        fetch('https://intense-lowlands-01074.herokuapp.com/project', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

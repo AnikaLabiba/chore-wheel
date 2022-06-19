@@ -10,7 +10,7 @@ const Projects = () => {
     const [filteredProjects, setFilteredProjects] = useState(null)
     const navigate = useNavigate()
     const { data: loadedProjects, isLoading, refetch } = useQuery('projects', () =>
-        fetch(`http://localhost:5000/projects`)
+        fetch(`https://intense-lowlands-01074.herokuapp.com/projects`)
             .then(res => res.json())
     )
 

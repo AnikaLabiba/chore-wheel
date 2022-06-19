@@ -9,7 +9,7 @@ const Profile = () => {
     const [user] = useAuthState(auth)
     const email = user?.email
     const { data: userInfo, isLoading, refetch } = useQuery('user', () =>
-        fetch(`http://localhost:5000/user?email=${email}`)
+        fetch(`https://intense-lowlands-01074.herokuapp.com/user?email=${email}`)
             .then(res => res.json()));
     if (isLoading) {
         return <Loading></Loading>
@@ -33,7 +33,7 @@ const Profile = () => {
         }
         const userDetails = { email, name, phone, address, career }
         console.log(userDetails);
-        fetch(`http://localhost:5000/user/${email}`, {
+        fetch(`https://intense-lowlands-01074.herokuapp.com/user/${email}`, {
             method: 'put',
             headers: {
                 'content-type': 'application/json'

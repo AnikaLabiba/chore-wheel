@@ -10,8 +10,8 @@ const Banner = () => {
             <div className="hero-content flex-col lg:flex-row md:flex-row banner">
                 <img src={gif} alt='' className="max-w-sm rounded-lg gif" />
                 <div className='text-left ml-12 intro'>
-                    <h1 className="text-5xl font-bold">Project Synergy</h1>
-                    <p className="py-6">Track your implemented projects with Project Synergy. Store your projects along with your information just by logging in to the system.</p>
+                    <h1 className="text-5xl font-bold">Chore Wheel</h1>
+                    <p className="py-6">Track your implemented projects with Chore Wheel. Store your projects along with your information just by logging in to the system.</p>
                     <button onClick={() => navigate('/projects')} className="btn bg-rose-200 hover:bg-rose-400 border-0">Get Started</button>
                 </div>
             </div>

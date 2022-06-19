@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const useProjectDetails = id => {
     const [project, setProject] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/project/${id}`)
+        fetch(`https://intense-lowlands-01074.herokuapp.com/project/${id}`)
             .then(res => res.json())
             .then(data => setProject(data))
     }, [id])

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteProjectModal = ({ deletingProject, setDeletingProject, refetch }) => {
     const { title, _id } = deletingProject
     const handleDelete = () => {
-        fetch(`http://localhost:5000/project/${_id}`, {
+        fetch(`https://intense-lowlands-01074.herokuapp.com/project/${_id}`, {
             method: 'delete'
         })
             .then(res => res.json())

@@ -18,7 +18,7 @@ const EditProject = () => {
         const catergory = event.target.catergory.value;
         const updatedProject = { title, img, description, startDate, endDates, liveSite, note, catergory }
 
-        fetch(`http://localhost:5000/project/${id}`, {
+        fetch(`https://intense-lowlands-01074.herokuapp.com/project/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
