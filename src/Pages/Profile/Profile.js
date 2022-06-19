@@ -64,26 +64,26 @@ const Profile = () => {
                     <div className="card flex justify-center w-full mx-auto px-7">
                         <form onSubmit={handleUpdateProfile} className="card-body w-full lg:w-4/5 mx-auto">
                             <div className="form-control">
-                                <input name='name' type="text" value={user?.displayName} className="input input-bordered w-full" required />
+                                <input name='name' type="text" defaultValue={user?.displayName} className="input input-bordered w-full" />
                             </div>
                             <div className="form-control">
-                                <input name='email' type="email" value={user?.email} className="input input-bordered w-full" required />
+                                <input name='email' type="email" defaultValue={user?.email} className="input input-bordered w-full" />
                             </div>
                             <div className="form-control">
-                                <input name='phone' type="number" placeholder="Phone" className="input input-bordered w-full" required />
+                                <input name='phone' defaultValue={userInfo?.phone} type="number" placeholder="Phone" className="input input-bordered w-full" />
                             </div>
                             <label className="label">
                                 <span className="label-text">Address</span>
                             </label>
                             <div className='flex flex-col lg:flex-row  md:flex-row'>
                                 <div className="form-control">
-                                    <input name='city' type="text" placeholder="City" className="input input-bordered mr-3" required />
+                                    <input name='city' defaultValue={userInfo?.address?.city} type="text" placeholder="City" className="input input-bordered mr-3" />
                                 </div>
                                 <div className="form-control">
-                                    <input name='state' type="text" placeholder="State" className="input input-bordered mr-3" required />
+                                    <input name='state' defaultValue={userInfo?.address?.state} type="text" placeholder="State" className="input input-bordered mr-3" />
                                 </div>
                                 <div className="form-control">
-                                    <input name='country' type="text" placeholder="Country" className="input input-bordered mr-3" required />
+                                    <input name='country' defaultValue={userInfo?.address?.country} type="text" placeholder="Country" className="input input-bordered mr-3" />
                                 </div>
                             </div>
 
@@ -92,13 +92,13 @@ const Profile = () => {
                             </label>
                             <div className='flex flex-col lg:flex-row md:flex-row'>
                                 <div className="form-control">
-                                    <input name='company' type="text" placeholder="Company Name" className="input input-bordered mr-3" required />
+                                    <input name='company' defaultValue={userInfo?.career?.company} type="text" placeholder="Company Name" className="input input-bordered mr-3" />
                                 </div>
                                 <div className="form-control">
-                                    <input name='occupation' type="text" placeholder="Occupation" className="input input-bordered mr-3" required />
+                                    <input name='occupation' defaultValue={userInfo?.career?.occupation} type="text" placeholder="Occupation" className="input input-bordered mr-3" />
                                 </div>
                                 <div className="form-control">
-                                    <input name='experience' type="number" placeholder="Years of Experience" className="input input-bordered mr-3" required />
+                                    <input name='experience' type="number" defaultValue={userInfo?.career?.experience} placeholder="Years of Experience" className="input input-bordered mr-3" />
                                 </div>
                             </div>
                             <input className='btn btn-sm bg-rose-300  hover:bg-rose-400 border-0 w-full text-white' type="submit" value="Submit" />
