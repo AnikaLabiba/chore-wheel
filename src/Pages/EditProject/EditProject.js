@@ -36,7 +36,7 @@ const EditProject = () => {
         <div className='min-h-screen'>
             <h1 className='my-7 text-2xl font-bold text-rose-300'>Update {project.title} </h1>
             <div className="card flex justify-center w-96 mx-auto shadow-2xl bg-base-100 mb-11">
-                <form onSubmit={handleUpdate} className="card-body">
+                <form onSubmit={handleUpdate} className="card-body w-full mx-auto">
                     <div className="form-control">
                         <input name='title' defaultValue={project.title} type="text" placeholder="Project title" className="input input-bordered" required />
                     </div>
@@ -52,7 +52,7 @@ const EditProject = () => {
                     <label className="label">
                         <span className="label-text">Sarting and Ending Date</span>
                     </label>
-                    <div className='flex'>
+                    <div className='flex flex-col lg:flex-row md:flex-row'>
                         <div className="form-control">
                             <input name='startDate' defaultValue={project.startDate} type="date" placeholder="Starting Date" className="input input-bordered  w-10/12" required />
                         </div>
