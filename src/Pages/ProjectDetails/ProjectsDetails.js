@@ -9,19 +9,19 @@ const ProjectsDetails = () => {
 
     return (
         <div className='h-screen mb-32'>
-            <div class="hero lg:min-h-screen my-10">
-                <div class="hero-content flex-col lg:flex-row-reverse lg:px-9 lg:text-left">
+            <div className="hero lg:min-h-screen my-10">
+                <div className="hero-content flex-col lg:flex-row-reverse lg:px-9 lg:text-left">
 
-                    <img src={project.img} alt={project.title} class="max-w-sm rounded-lg shadow-2xl w-full" />
+                    <img src={project.img} alt={project.title} className="max-w-sm rounded-lg shadow-2xl w-full" />
 
                     <div>
-                        <h1 class="text-5xl font-bold">{project.title}</h1>
+                        <h1 className="text-5xl font-bold">{project.title}</h1>
                         <p className='my-4'>{project.description}</p>
                         <p className='my-4'>{project.startDate}- {project.endDates}</p>
                         <div className='flex justify-center lg:justify-start'>
-                            <a href={project.liveSite} class="badge">Live Site</a>
-                            <div class="badge badge-primary">Client-side</div>
-                            <div class="badge badge-secondary">Server-side</div>
+                            <a href={project.liveSite} className="badge">Live Site</a>
+                            <div className="badge badge-primary">Client-side</div>
+                            <div className="badge badge-secondary">Server-side</div>
                         </div>
                     </div>
                 </div>

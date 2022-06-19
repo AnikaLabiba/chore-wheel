@@ -37,36 +37,36 @@ const AddProject = () => {
     return (
         <div className='min-h-screen'>
             <h1 className='my-7 text-2xl font-bold text-rose-300'>Add a new project</h1>
-            <div class="card flex justify-center max-w-sm mx-auto shadow-2xl bg-base-100 mb-11">
-                <form onSubmit={handleAddProject} class="card-body">
-                    <div class="form-control">
-                        <input name='title' type="text" placeholder="Project title" class="input input-bordered" required />
+            <div className="card flex justify-center max-w-sm mx-auto shadow-2xl bg-base-100 mb-11">
+                <form onSubmit={handleAddProject} className="card-body">
+                    <div className="form-control">
+                        <input name='title' type="text" placeholder="Project title" className="input input-bordered" required />
                     </div>
-                    <div class="form-control">
-                        <input name='img' type="url" placeholder="Image" class="input input-bordered" required />
+                    <div className="form-control">
+                        <input name='img' type="url" placeholder="Image" className="input input-bordered" required />
                     </div>
-                    <div class="form-control">
-                        <input name='description' type="text" placeholder="Description" class="input input-bordered" required />
+                    <div className="form-control">
+                        <input name='description' type="text" placeholder="Description" className="input input-bordered" required />
                     </div>
-                    <div class="form-control">
-                        <input name='category' type="text" placeholder="Category" class="input input-bordered" required />
+                    <div className="form-control">
+                        <input name='category' type="text" placeholder="Category" className="input input-bordered" required />
                     </div>
-                    <label class="label">
-                        <span class="label-text">Sarting and Ending Date</span>
+                    <label className="label">
+                        <span className="label-text">Sarting and Ending Date</span>
                     </label>
                     <div className='flex'>
-                        <div class="form-control">
-                            <input name='startDate' type="date" placeholder="Starting Date" class="input input-bordered mr-3" required />
+                        <div className="form-control">
+                            <input name='startDate' type="date" placeholder="Starting Date" className="input input-bordered mr-3" required />
                         </div>
-                        <div class="form-control">
-                            <input name='endDates' type="date" placeholder="Ending Date" class="input input-bordered mr-3" required />
+                        <div className="form-control">
+                            <input name='endDates' type="date" placeholder="Ending Date" className="input input-bordered mr-3" required />
                         </div>
                     </div>
-                    <div class="form-control">
-                        <input name='liveSite' type="url" placeholder="Live Site" class="input input-bordered" />
+                    <div className="form-control">
+                        <input name='liveSite' type="url" placeholder="Live Site" className="input input-bordered" />
                     </div>
-                    <div class="form-control">
-                        <input name='note' type="text" placeholder="Note" class="input input-bordered" />
+                    <div className="form-control">
+                        <input name='note' type="text" placeholder="Note" className="input input-bordered" />
                     </div>
                     <input className='btn btn-sm bg-rose-300 hover:bg-rose-400 border-0 w-full max-w-xs text-white' type="submit" value="Submit" />
                 </form>

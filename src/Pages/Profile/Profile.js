@@ -42,7 +42,7 @@ const Profile = () => {
         })
             .then(res => res.json())
             .then(updated => {
-                console.log(updated);
+
                 if (updated.acknowledged === true) {
                     toast('Profile updated', {
                         position: toast.POSITION.TOP_CENTER
@@ -53,52 +53,52 @@ const Profile = () => {
     }
     return (
         <div className='lg:min-h-screen'>
-            <div class="drawer drawer-mobile">
-                <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col items-center lg:justify-center">
+            <div className="drawer drawer-mobile">
+                <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+                <div className="drawer-content flex flex-col items-center lg:justify-center">
                     {/* <!-- Page content here --> */}
                     <div className='flex'>
                         <h2 className='text-3xl lg:my-2 lg:pr-96 md:pr-96'>Update Profile</h2>
-                        <label for="my-drawer-2" class="btn btn-ghost btn-primary drawer-button lg:hidden">Profile Details</label>
+                        <label htmlFor="my-drawer-2" className="btn btn-ghost btn-primary drawer-button lg:hidden">Profile Details</label>
                     </div>
-                    <div class="card flex justify-center w-full mx-auto px-7">
-                        <form onSubmit={handleUpdateProfile} class="card-body w-full lg:w-4/5 mx-auto">
-                            <div class="form-control">
-                                <input name='name' type="text" value={user?.displayName} class="input input-bordered w-full" required />
+                    <div className="card flex justify-center w-full mx-auto px-7">
+                        <form onSubmit={handleUpdateProfile} className="card-body w-full lg:w-4/5 mx-auto">
+                            <div className="form-control">
+                                <input name='name' type="text" value={user?.displayName} className="input input-bordered w-full" required />
                             </div>
-                            <div class="form-control">
-                                <input name='email' type="email" value={user?.email} class="input input-bordered w-full" required />
+                            <div className="form-control">
+                                <input name='email' type="email" value={user?.email} className="input input-bordered w-full" required />
                             </div>
-                            <div class="form-control">
-                                <input name='phone' type="number" placeholder="Phone" class="input input-bordered w-full" required />
+                            <div className="form-control">
+                                <input name='phone' type="number" placeholder="Phone" className="input input-bordered w-full" required />
                             </div>
-                            <label class="label">
-                                <span class="label-text">Address</span>
+                            <label className="label">
+                                <span className="label-text">Address</span>
                             </label>
                             <div className='flex flex-col lg:flex-row  md:flex-row'>
-                                <div class="form-control">
-                                    <input name='city' type="text" placeholder="City" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='city' type="text" placeholder="City" className="input input-bordered mr-3" required />
                                 </div>
-                                <div class="form-control">
-                                    <input name='state' type="text" placeholder="State" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='state' type="text" placeholder="State" className="input input-bordered mr-3" required />
                                 </div>
-                                <div class="form-control">
-                                    <input name='country' type="text" placeholder="Country" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='country' type="text" placeholder="Country" className="input input-bordered mr-3" required />
                                 </div>
                             </div>
 
-                            <label class="label">
-                                <span class="label-text">Career</span>
+                            <label className="label">
+                                <span className="label-text">Career</span>
                             </label>
                             <div className='flex flex-col lg:flex-row md:flex-row'>
-                                <div class="form-control">
-                                    <input name='company' type="text" placeholder="Company Name" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='company' type="text" placeholder="Company Name" className="input input-bordered mr-3" required />
                                 </div>
-                                <div class="form-control">
-                                    <input name='occupation' type="text" placeholder="Occupation" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='occupation' type="text" placeholder="Occupation" className="input input-bordered mr-3" required />
                                 </div>
-                                <div class="form-control">
-                                    <input name='experience' type="number" placeholder="Years of Experience" class="input input-bordered mr-3" required />
+                                <div className="form-control">
+                                    <input name='experience' type="number" placeholder="Years of Experience" className="input input-bordered mr-3" required />
                                 </div>
                             </div>
                             <input className='btn btn-sm bg-rose-300  hover:bg-rose-400 border-0 w-full text-white' type="submit" value="Submit" />
@@ -107,14 +107,14 @@ const Profile = () => {
 
 
                 </div>
-                <div class="drawer-side">
-                    <label for="my-drawer-2" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto w-80 bg-rose-100 text-base-content">
+                <div className="drawer-side">
+                    <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+                    <ul className="menu p-4 overflow-y-auto w-80 bg-rose-100 text-base-content">
                         {/* <!-- Sidebar content here --> */}
                         <li>
-                            <div class="avatar placeholder">
-                                <div class="bg-pink-200 text-neutral-content rounded-full w-24 mx-auto">
-                                    <span class="text-3xl">{user?.displayName}</span>
+                            <div className="avatar placeholder">
+                                <div className="bg-pink-200 text-neutral-content rounded-full w-24 mx-auto">
+                                    <span className="text-3xl">{user?.displayName}</span>
                                 </div>
                             </div>
                         </li>
