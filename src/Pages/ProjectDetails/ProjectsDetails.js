@@ -19,9 +19,7 @@ const ProjectsDetails = () => {
                         <p className='my-4'>{project.description}</p>
                         <p className='my-4'>{project.startDate}- {project.endDates}</p>
                         <div className='flex justify-center lg:justify-start'>
-                            <a href={project.liveSite} className="badge">Live Site</a>
-                            <div className="badge badge-primary">Client-side</div>
-                            <div className="badge badge-secondary">Server-side</div>
+                            <a href={project.liveSite} className="badge bg-rose-300 border-rose-400">Live Site</a>
                         </div>
                     </div>
                 </div>
