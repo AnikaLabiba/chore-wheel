@@ -11,7 +11,7 @@ const Banner = () => {
                 <img src={gif} alt='' class="max-w-sm rounded-lg gif" />
                 <div className='text-left ml-12 intro'>
                     <h1 class="text-5xl font-bold">Project Synergy</h1>
-                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p class="py-6">Track your implemented projects with Project Synergy. Store your projects along with your information just by logging in to the system.</p>
                     <button onClick={() => navigate('/projects')} class="btn bg-rose-200 hover:bg-rose-400 border-0">Get Started</button>
                 </div>
             </div>

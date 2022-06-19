@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useProjectDetails from '../../hooks/useProjectDetails';
 import './ProjectDetails.css'
 
 const ProjectsDetails = () => {
     const { id } = useParams()
-    const [project, setProject] = useState({})
-    useEffect(() => {
-        fetch(`http://localhost:5000/project/${id}`)
-            .then(res => res.json())
-            .then(data => setProject(data))
-    }, [id])
+    const [project] = useProjectDetails(id)
+
     return (
         <div className='h-screen mb-32'>
             <div class="hero lg:min-h-screen my-10">

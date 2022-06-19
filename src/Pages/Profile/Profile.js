@@ -101,7 +101,7 @@ const Profile = () => {
                                     <input name='experience' type="number" placeholder="Years of Experience" class="input input-bordered mr-3" required />
                                 </div>
                             </div>
-                            <input className='btn btn-sm bg-pink-300  hover:bg-pink-400 border-0 w-full text-white' type="submit" value="Submit" />
+                            <input className='btn btn-sm bg-rose-300  hover:bg-rose-400 border-0 w-full text-white' type="submit" value="Submit" />
                         </form>
                     </div>
 

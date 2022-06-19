@@ -36,7 +36,7 @@ const AddProject = () => {
     }
     return (
         <div className='min-h-screen'>
-            <h1 className='my-7 text-2xl font-bold text-pink-400'>Add a new project</h1>
+            <h1 className='my-7 text-2xl font-bold text-rose-300'>Add a new project</h1>
             <div class="card flex justify-center max-w-sm mx-auto shadow-2xl bg-base-100 mb-11">
                 <form onSubmit={handleAddProject} class="card-body">
                     <div class="form-control">
@@ -68,7 +68,7 @@ const AddProject = () => {
                     <div class="form-control">
                         <input name='note' type="text" placeholder="Note" class="input input-bordered" />
                     </div>
-                    <input className='btn btn-sm bg-pink-300 hover:bg-pink-400 border-0 w-full max-w-xs text-white' type="submit" value="Submit" />
+                    <input className='btn btn-sm bg-rose-300 hover:bg-rose-400 border-0 w-full max-w-xs text-white' type="submit" value="Submit" />
                 </form>
             </div>
         </div>
