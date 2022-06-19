@@ -6,7 +6,7 @@ import gif from '../../../Images/gif.gif'
 const Banner = () => {
     const navigate = useNavigate()
     return (
-        <div className="hero lg:min-h-screen bg-base-200 lg:px-12">
+        <div className="hero min-h-screen bg-base-200 lg:px-12">
             <div className="hero-content flex-col lg:flex-row md:flex-row banner">
                 <img src={gif} alt='' className="max-w-sm rounded-lg gif" />
                 <div className='text-left ml-12 intro'>

@@ -4,6 +4,7 @@ import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
+import { BiLeftIndent } from 'react-icons/bi';
 
 const Profile = () => {
     const [user] = useAuthState(auth)
@@ -58,8 +59,8 @@ const Profile = () => {
                 <div className="drawer-content flex flex-col items-center lg:justify-center">
                     {/* <!-- Page content here --> */}
                     <div className='flex'>
-                        <h2 className='text-3xl lg:my-2 lg:pr-96 md:pr-96'>Update Profile</h2>
-                        <label htmlFor="my-drawer-2" className="btn btn-ghost btn-primary drawer-button lg:hidden">Profile Details</label>
+                        <h2 className='text-2xl lg:text-3xl lg:my-2 lg:pr-96 md:pr-96'>Update Profile</h2>
+                        <label htmlFor="my-drawer-2" className="btn btn-ghost btn-primary drawer-button lg:hidden text-3xl text-rose-300"><BiLeftIndent /></label>
                     </div>
                     <div className="card flex justify-center w-full mx-auto px-7">
                         <form onSubmit={handleUpdateProfile} className="card-body w-full lg:w-4/5 mx-auto">

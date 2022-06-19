@@ -34,9 +34,9 @@ const EditProject = () => {
     }
     return (
         <div className='min-h-screen'>
-            <h1 className='my-7 text-2xl font-bold text-rose-300'>Update</h1>
+            <h1 className='my-7 text-2xl font-bold text-rose-300'>Update {project.title} </h1>
             <div className="card flex justify-center w-96 mx-auto shadow-2xl bg-base-100 mb-11">
-                <form onSubmit={handleUpdate} className="card-body w-full">
+                <form onSubmit={handleUpdate} className="card-body">
                     <div className="form-control">
                         <input name='title' defaultValue={project.title} type="text" placeholder="Project title" className="input input-bordered" required />
                     </div>
@@ -67,7 +67,7 @@ const EditProject = () => {
                     <div className="form-control">
                         <input name='note' defaultValue={project.note} type="text" placeholder="Note" className="input input-bordered" />
                     </div>
-                    <input className='btn btn-sm bg-rose-300 hover:bg-rose-400 border-0 w-full max-w-xs text-white' type="submit" value="Submit" />
+                    <input className='btn btn-sm bg-rose-300 hover:bg-rose-400 border-0 w-full max-w-xs text-white' type="submit" value="Update" />
                 </form>
             </div>
         </div>
