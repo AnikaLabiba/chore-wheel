@@ -15,8 +15,8 @@ const EditProject = () => {
         const endDates = event.target.endDates.value;
         const liveSite = event.target.liveSite.value;
         const note = event.target.note.value;
-        const catergory = event.target.catergory.value;
-        const updatedProject = { title, img, description, startDate, endDates, liveSite, note, catergory }
+        const category = event.target.category.value;
+        const updatedProject = { title, img, description, startDate, endDates, liveSite, note, category }
 
         fetch(`https://intense-lowlands-01074.herokuapp.com/project/${id}`, {
             method: 'PUT',
@@ -47,7 +47,7 @@ const EditProject = () => {
                         <input name='description' defaultValue={project.description} type="text" placeholder="Description" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                        <input name='catergory' defaultValue={project.catergory} type="text" placeholder="catergory" className="input input-bordered" required />
+                        <input name='category' defaultValue={project.category} type="text" placeholder="category" className="input input-bordered" required />
                     </div>
                     <label className="label">
                         <span className="label-text">Sarting and Ending Date</span>

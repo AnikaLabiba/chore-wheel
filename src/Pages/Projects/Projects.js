@@ -56,7 +56,7 @@ const Projects = () => {
                         <thead>
                             <tr>
                                 <th>Project</th>
-                                <th>Catergory</th>
+                                <th>category</th>
                                 <th>Duration</th>
                                 <th></th>
                             </tr>
